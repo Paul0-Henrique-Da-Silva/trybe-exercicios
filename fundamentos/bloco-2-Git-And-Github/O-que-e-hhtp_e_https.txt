@@ -1,0 +1,92 @@
+O protocolo HTTP
+
+O que é o protocolo HTTP?
+
+HTTP é a sigla para Hyper-Text Transfer Protocol. Este protocolo é usado para buscar recursos como documentos HTML.
+
+WWW (World Wide Web) é a comunicação entre clientes e servidores web.
+
+A comunicação entre computadores clientes e servidores web é feita enviando Solicitações HTTP e recebendo Respostas HTTP.
+
+É importante notar que o protocolo HTTP não pode buscar dados. Ele depende do protocolo TCP/IP para obter as requisições e respostas entre 2 dispositivos.
+
+ Qual é a diferença entre HTTP e HTTPS?
+
+As solicitações/respostas HTTP não são criptografadas, sendo vulneráveis ​​a diversos tipos de ataques cibernéticos. por outro lado, HTTPS é uma comunicação mais segura e protegida. O HTTPS implementa o SSL. Sites como Google, Facebook, usam o protocolo HTTPS para manter as senhas e dados sobre seus usuários seguros.
+
+Solicitações HTTP 
+
+As requisições HTTP são formadas principalmente por esses blocos de informação:
+
+-URL/endpoint → os recursos que você deseja acessar (como a página de clientes);
+- Query Params → parâmetros da URL (como ascendente por preço para um e-commerce);
+- Methods → a ação que você deseja fazer na URL/endpoint;
+- Heards → informações adicionais;
+- Bory → corpo da mensagem;
+
+URL/endpoint e "Query Params"
+
+Imagine o seguinte site https://website.com**/products?page=3&orderBy=name
+O /products é o ponto de extremidade.
+Após o domínio (website.com), o que vem depois do / é o endpoint da nossa solicitação HTTP. Falando na linguagem humana, você está dizendo ao back-end que deseja acessar a página de produtos do site.
+
+O ?page=3&orderBy=name é o Query Params desta solicitação HTTP. Aqui, você está dizendo ao back-end que deseja ver a terceira página dos produtos e ordená-la por nome em ordem alfabética.
+
+
+Métodos
+
+Os métodos são responsáveis ​​por indicar a ação a ser executada para um determinado recurso.
+
+- GET: visualização de dados, retorna o código de status 200 ou 404.
+- POST: criação de dados (inserindo um novo registro), geralmente retornam o código de status 201 e um novo caminho no cabeçalho com o link do recurso criado.
+- PUT: alteração de dados (edição), código de status de retorno 200 ou 404;
+- DELETE: exclusão de dados, código de status de retorno 200 ou 404;
+- HEAD: é idêntico a GET, mas não retorna o corpo da resposta.
+- CONNECT: estabelece um túnel para o servidor identificado pelo recurso de destino.
+- OPÇÕES: descreve as opções de comunicação para o recurso de destino.
+- TRACE: executa um teste de loopback de mensagem ao longo do caminho para o recurso de destino.
+- PATCH: aplica modificações parciais a um recurso.
+
+
+Cabeçalhos (ou  Heards)
+
+Os cabeçalhos são usados ​​para trocar informações adicionais entre o cliente e o servidor em uma solicitação/resposta HTTP.
+Há uma variedade de cabeçalhos predefinidos no HTTP, mas também é possível criar cabeçalhos personalizados.
+Um cabeçalho HTTP consiste em seu nome **não diferencia maiúsculas de minúsculas** seguido por dois pontos (:)
+Os cabeçalhos personalizados sempre começam com X, como → X-Ord-Id: 1123.
+
+Bory
+
+O corpo só está disponível para solicitações **POST** e **PUT**.
+O formato dos dados enviados a essas solicitações é JSON (JavaScript Object Notation). No entanto, não podemos enviar arquivos binários (PDF’s, imagens, áudio, vídeo) com JSON, portanto, para esse tipo de arquivo, o tipo de corpo é Multipart/form-data.
+
+Respostas HTTP
+
+As respostas HTTP são formadas principalmente por estas informações:
+
+Cabeçalhos → informações adicionais como;
+Tipo de Conteúdo → tipo do conteúdo da resposta;
+Código de Status → o código de status indica o que aconteceu com a solicitação e porque aconteceu;
+Corpo → as respostas só podem ter corpo se forem do método PUT e POST;
+
+Status codes
+
+
+- 100-199 → Information responses;
+- 200-299 → Succeed responses;
+- 300-399 → Redirection;
+- 400-499 → Client errors;
+- 500-599 → Server errors;
+
+Principal status codes:
+
+- 200: OK;
+- 201: Created;
+- 204: No Content;
+- 400: Bad Request;
+- 401/403: Unauthorized;
+- 404: Not Found;
+- 405: Method Not Allowed;
+- 409: Conflict;
+- 500: Internal Server Error;
+

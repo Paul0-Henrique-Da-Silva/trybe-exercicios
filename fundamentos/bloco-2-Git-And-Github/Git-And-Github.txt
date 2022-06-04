@@ -1,0 +1,38 @@
+sudo apt-get install git-all
+
+git config --global user.name "Seu nome"
+git config --global user.email seuemail@exemplo.br 
+
+Criar conta no GitHub => https://github.com/
+
+
+Adicionando uma chave SSH na sua conta do GitHub 
+
+ssh-keygen -t rsa -b 4096 -C "seuemail@gmail.com"
+
+eval "$(ssh-agent -s)"
+
+ssh-add ~/.ssh/id_rsa
+
+cat ~/.ssh/id_rsa.pub
+
+    No canto superior direito do GitHub , clique na sua foto de perfil e clique em Settings ;
+    Na barra lateral esquerda, clique em SSH and GPG keys ;
+    Clique em New SSH key ou Add SSH key ;
+    No campo Título , adicione um descrição para a nova chave;
+    Cole sua chave dentro do campo Key ;
+    Clique em Add SSH key ;
+    Caso seja solicitado, confirme sua senha do Github.
+
+Execute o comando para adicionar a URL ao repositório local git remote add origin "URL_DO_REPOSITÓRIO" ; 
+
+
+Verifique se tudo está certo com sua URL remota utilizando o comando git remote -v . Seu terminal deve conter algo similar a isso:
+origin  git@github.com:john-snow/know-nothing.git (fetch)
+origin  git@github.com:john-snow/know-nothing.git (push)
+
+Após o 'commit' vc de fazer "push" para empurrar seu arquivo para github
+
+git push origin master
+
+

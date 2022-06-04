@@ -1,0 +1,28 @@
+Navegue até a raiz do projeto com o arquivo .txt
+cd /hom/ph/documento/exe
+
+Verifique se não existe nada sem "commitar" utilizando git status : 
+
+git status 
+
+Crie uma nova branch com o nome trybe-skills-changes e faça checkout nela; 
+
+git branch trybe-skills-changes
+git checkou trybe-skills-changes
+
+No arquivo .txt , ao final da lista de habilidades , adicione mais duas habilidades que serão desenvolvidas na Trybe;
+
+cat >> trybe-skills-changes
+
+- Unix
+- Bash
+- Git
+- HTML
+- CSS
+
+----------------------------------
+git add trybe-skills-changes
+----------------------------------
+git commit -m "primeiras skills"
+----------------------------------
+git push -u origin trybe-skills-change

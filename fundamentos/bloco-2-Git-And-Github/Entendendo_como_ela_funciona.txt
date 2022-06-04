@@ -1,0 +1,47 @@
+As aplicações web seguem o modelo Cliente-Servidor.
+
+    O “cliente” é o navegador da web que o usuário do computador está usando, como Brave, Firefox, Chrome. O termo técnico para cliente é um aplicativo que está conectado à internet. A principal função do cliente é receber a interação do usuário (front-end) e traduzi-la em uma solicitação para outro computador, o servidor.
+    odo computador tem um endereço IP, como o CPF brasileiro. Este endereço é o identificador do computador. Esse número é único e é usado para identificar computadores, telefones e tablets.
+
+Servidor
+
+    O servidor também é um computador com conexão à internet. Ele também tem seu endereço IP, como o cliente. O servidor aguarda as solicitações do cliente (através da URL). O servidor verifica a URL e envia uma resposta de acordo com os dados solicitados pelo cliente. A principal função de
+o servidor é armazenar, processar e exibir páginas da web para os clientes. Existem muitos tipos de servidores: Servidores Web, Servidores de Banco de Dados, Servidores de Arquivos, Servidores de Aplicativos. O servidor usado para pesquisar no google é um Web Server.
+
+URL
+
+    URL é a sigla para Uniform Resource Locators e é responsável por identificar um recurso web específico solicitado pelo cliente. Por exemplo, website.com/users exibirá ao cliente uma lista de todos os usuários do Facebook. A URL identifica o protocolo do servidor (HTTPS, por exemplo), o nome do host (website.com) e o recurso que desejamos acessar (/users).
+
+Endereço de IP
+
+    IP é a sigla de Internet Protocol. O endereço IP é um identificador numérico para um dispositivo (computador, smartphone, etc) conectado à rede TCP/IP. Cada dispositivo conectado à internet possui um endereço IP exclusivo, usado para se comunicar com outros dispositivos. Os endereços IP possuem campos de 4 dígitos separados por pontos (123.456.78.9). Esses números são chamados de endereço lógico.
+    Para rastrear um dispositivo conectado à Internet, o endereço lógico é convertido em um endereço físico por um software. Este endereço físico pertence ao hardware.
+
+TCP/IP
+
+    De forma simples, o TCP/IP é o principal protocolo para envio/recebimento de dados. TCP é a sigla para Transmission Control Protocol e é responsável por definir como as diferentes aplicações se comunicam na rede e também como os dados serão enviados como pacotes. E o endereço IP define como os dados (como pacotes) serão enviados para chegar corretamente ao destinatário.
+    O TCP/IP é uma união dos protocolos TCP e IP, uma pilha de protocolos que é dividida em quatro camadas: aplicação, transporte, rede e interface. Cada camada tem uma responsabilidade específica, mas todas estão conectadas para garantir a segurança e disponibilidade dos dados.
+
+ISP
+
+    ISP é a sigla de *Internet Service Provider*, seu provedor de rede. É qualquer empresa que fornece acesso à internet.
+
+DNS
+    DNS é a sigla de *Domain Name System,* é um dispositivo com um banco de dados distribuído que gerencia os nomes de serviços, computadores ou qualquer dispositivo conectado à Internet. Ele costuma relacionar o endereço nominal (website.com) ao endereço IP. Os servidores DNS são responsáveis ​​por localizar e traduzir para números (endereço IP) os sites que são digitados no navegador.
+
+Número da porta
+
+    O número de porta é um número de 16 bits para identificar uma porta específica no servidor e está sempre relacionado com o endereço IP. O número da porta é uma forma de identificar um processo específico encaminhado ao servidor.
+
+Host
+    
+    O *host* é qualquer computador conectado à internet, como cliente, servidor ou qualquer tipo de dispositivo. Cada host tem um endereço IP exclusivo. Por exemplo, o site (google.com) tem um host. O host é o servidor web que hospeda o site. É comum pensar que servidor e host são a mesma coisa, mas não são! O servidor é um tipo de host - um dispositivo específico com um endereço IP, mas o host também pode ser uma empresa inteira que fornece serviços de hospedagem para manter toneladas de servidores web.
+
+HTTP
+    
+    HTTP é a sigla para *Hyper-text Transfer Protocol,* é o protocolo usado para estabelecer a comunicação entre navegadores e servidores web.
+
+
+
+
+
